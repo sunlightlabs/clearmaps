@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow 
+	xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="600" height="500" title="Data Editor" showCloseButton="true" initialize="init()" >
+	
+	<mx:Script source="DataEditorScript.as"/>
+	
+	<mx:ComboBox x="318" y="10" width="252" id="layerSelector" change="layerSelected()"></mx:ComboBox>
+	<mx:Label x="270" y="12" text="Layer:"/>
+	<mx:DataGrid x="0" y="43" width="580" height="417" editable="true" id="fieldDataGrid">
+		<mx:columns>
+			<mx:DataGridColumn headerText="Export" dataField="export"  itemRenderer="mx.controls.CheckBox" rendererIsEditor="true" editorDataField="selected" width="50"/>
+			<mx:DataGridColumn headerText="DBF Field Name" dataField="dbfName" editable="false"/>
+			<mx:DataGridColumn headerText="Flash Field Name" dataField="flashName"/>
+			<mx:DataGridColumn headerText="Type" dataField="dataType" itemRenderer="DataTypeEditor" rendererIsEditor="true" editorDataField="selectedValue" width="100"/>		
+		</mx:columns>
+	</mx:DataGrid>
+</mx:TitleWindow>

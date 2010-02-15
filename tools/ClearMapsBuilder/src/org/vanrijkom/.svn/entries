@@ -1,0 +1,37 @@
+9
+
+dir
+42
+http://vanrijkom-flashlibs.googlecode.com/svn/trunk/org/vanrijkom
+http://vanrijkom-flashlibs.googlecode.com/svn
+
+
+
+2007-02-13T18:20:42.801183Z
+41
+edwin.vanrijkom
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bb3a3160-3429-0410-94b5-cbfdbaa2be57
+
+far
+dir
+
+shp
+dir
+
+dbf
+dir
+

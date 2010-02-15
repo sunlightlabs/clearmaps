@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" width="980" height="900" 
+	layout="absolute" 
+	backgroundGradientAlphas="[1.0, 1.0]" 
+	backgroundGradientColors="[#E5E5E5, #FFFFFF]" initialize="init();">
+	
+	<mx:Script source="ClearMapsBuilder.as"/>
+	
+	<mx:Canvas id="mapCanvas" x="10" y="51" width="960" height="800" backgroundAlpha="1.0">
+	</mx:Canvas>
+	<mx:ApplicationControlBar x="10" y="10" width="800">
+	
+		<mx:Button label="Add Shapefile" click="loadShapefile();"/>
+		<mx:Button label="Edit Map Properties" enabled="false"/>
+		<mx:Button label="Edit Data Fields" enabled="true" click="editDataField();"/>
+		<mx:Button label="Export Map Layers" textAlign="center" enabled="true" click="exportMapfiles();"/>
+		
+	</mx:ApplicationControlBar>
+	
+</mx:WindowedApplication>
+

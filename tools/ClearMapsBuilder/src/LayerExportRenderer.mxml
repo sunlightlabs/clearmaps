@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="60" borderStyle="inset" borderColor="#B6B6B6">
+	<mx:Label id="LayerName" fontSize="12" fontWeight="bold" text="{data.name}"/>
+	<mx:HBox width="100%" borderColor="#FFFFFF" borderStyle="none">
+		<mx:Label text="Shapefile: {int(data.shpSize / 1024)}kb" id="ShapefileSize"/>
+		<mx:Label text="DBF: {int(data.dbfSize / 1024)}kb" id="DbfSize"/>
+		<mx:Label text="Encoded: {int(data.encodedSize / 1024)}kb" id="EncodedSize"/>
+	</mx:HBox>
+</mx:VBox>

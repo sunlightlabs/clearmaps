@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/41/trunk/org/vanrijkom/shp
+END
+ShpPointZ.as
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpPointZ.as
+END
+ShpObject.as
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpObject.as
+END
+ShpPolygon.as
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpPolygon.as
+END
+ShpHeader.as
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpHeader.as
+END
+ShpError.as
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpError.as
+END
+ShpPoint.as
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpPoint.as
+END
+ShpPolyline.as
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpPolyline.as
+END
+ShpRecord.as
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpRecord.as
+END
+ShpTools.as
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/41/trunk/org/vanrijkom/shp/ShpTools.as
+END
+ShpType.as
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/23/trunk/org/vanrijkom/shp/ShpType.as
+END

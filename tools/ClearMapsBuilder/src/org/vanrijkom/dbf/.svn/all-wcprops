@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/34/trunk/org/vanrijkom/dbf
+END
+DbfField.as
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/34/trunk/org/vanrijkom/dbf/DbfField.as
+END
+DbfFilter.as
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/34/trunk/org/vanrijkom/dbf/DbfFilter.as
+END
+DbfHeader.as
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/34/trunk/org/vanrijkom/dbf/DbfHeader.as
+END
+DbfError.as
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/34/trunk/org/vanrijkom/dbf/DbfError.as
+END
+DbfRecord.as
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/34/trunk/org/vanrijkom/dbf/DbfRecord.as
+END
+DbfTools.as
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/34/trunk/org/vanrijkom/dbf/DbfTools.as
+END

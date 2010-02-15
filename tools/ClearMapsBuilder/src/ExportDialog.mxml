@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" width="600" height="500" title="Export Map Layers" showCloseButton="true" initialize="init()">
+
+	<mx:Script source="ExportDialogScript.as"/>
+
+	<mx:Button id="exportButton" enabled="false" x="419" y="10" label="Export Selected Layer" click="exportLayer()"/>
+	<mx:List x="10" y="40" width="560" height="410" id="layerList" itemRenderer="LayerExportRenderer" change="selectionChanged()"></mx:List>
+	
+</mx:TitleWindow>

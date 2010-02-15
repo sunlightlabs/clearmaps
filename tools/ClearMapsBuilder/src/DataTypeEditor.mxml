@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Box xmlns:mx="http://www.adobe.com/2006/mxml" width="100%"
+   height="100%" horizontalAlign="left">
+  <mx:Script>
+   <![CDATA[
+     
+     public var selectedValue:String;
+     
+    
+   ]]>
+ </mx:Script>
+  <mx:ComboBox id="dd" selectedIndex="{data.dataType == 'String' ? 0 : 1}"
+     change="selectedValue = dd.selectedLabel">
+    <mx:dataProvider>
+      <mx:Array>
+        <mx:String>String</mx:String>
+        <mx:String>Integer</mx:String>
+      </mx:Array>
+    </mx:dataProvider>
+  </mx:ComboBox>
+</mx:Box>
