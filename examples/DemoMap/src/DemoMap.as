@@ -30,7 +30,7 @@ package {
 			super();
 			
 			// give the map a title 
-			this.map = new Map("Percent of Population Below Poverty");
+			this.map = new Map("Percentage of Population Below Poverty");
 			
 			// listen for map ready event to process/visualize data
 			this.map.addEventListener(MapEvent.READY, mapReady);

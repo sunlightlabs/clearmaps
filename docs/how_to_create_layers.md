@@ -12,7 +12,7 @@ A "Shapefile" is actually a group of files with different extensions sharing a c
 
 This documentation requires a GIS editor such as [Quantum GIS](http://qgis.org/) (open source) or ArcGIS Desktop (commercial). The documentation describes the steps required for Quantum GIS, however, it should be easily adapted to work with any similarly featured editor.
 
-Step five uses the ClearMapsBuilder application included in this project. This application requires the Adobe AIR Runtime. To install the builder, open the "ClearMapsBuilder.air" file contained in the project directory and follow the AIR installation instructions. The installer will warn that the publisher of this application is unknown. Accept this warning and select the installation directory. The builder application can be launched from the installation directory or by clicking on the desktop shortcut created by the installer.
+Step five uses the ClearMapsBuilder application included in this project. This application requires the Adobe AIR Runtime. To install the builder, open the "ClearMapsBuilder.air" file contained in the tools directory and follow the AIR installation instructions. The installer will warn that the publisher of this application is unknown. Accept this warning and select the installation directory. The builder application can be launched from the installation directory or by clicking on the desktop shortcut created by the installer.
 
 
 
