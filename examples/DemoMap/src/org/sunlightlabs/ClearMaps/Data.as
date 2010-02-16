@@ -29,7 +29,7 @@ package org.sunlightlabs.ClearMaps
 			this.addEventListener(Event.ADDED_TO_STAGE, addedToStage);
 		}
 		
-		public function addedToStage(even:Event)
+		public function addedToStage(even:Event):void
 		{
 			this.loadData(url);
 		}

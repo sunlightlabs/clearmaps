@@ -22,19 +22,19 @@ package org.sunlightlabs.ClearMaps
 		
 		private var tooltip:Sprite;
 		
-		private var _fill:uint;
+		private var _fill:Number;
 		private var useDefaultFill:Boolean = true;
 		
-		private var _fillSelected:uint;
+		private var _fillSelected:Number;
 		private var useDefaultFillSelected:Boolean = true;
 		
-		private var _outline:uint;
+		private var _outline:Number;
 		private var useDefaultOutline:Boolean = true;
 		
-		public var _outlineSelected:uint;
+		public var _outlineSelected:Number;
 		private var useDefaultOutlineSelected:Boolean = true;
 		
-		public var _outlineThicknes:int;
+		public var _outlineThicknes:Number;
 		private var useDefaultOutlineThicknes:Boolean = true;
 		
 		public var infoTip:Sprite;
@@ -174,7 +174,7 @@ package org.sunlightlabs.ClearMaps
 			return _selected;
 		}
 		
-		public function mouseOver(event:MouseEvent)
+		public function mouseOver(event:MouseEvent):void
 		{
 			event.stopPropagation();
 			
@@ -184,7 +184,7 @@ package org.sunlightlabs.ClearMaps
 			this.layer.selectFeature(this);		
 		}
 		
-		public function mouseOut(event:MouseEvent)
+		public function mouseOut(event:MouseEvent):void
 		{
 			this.stage.removeEventListener(MouseEvent.MOUSE_OUT, mouseOut);
 			this.removeEventListener(MouseEvent.MOUSE_OUT, mouseOut);

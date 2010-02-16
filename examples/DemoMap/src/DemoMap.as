@@ -69,7 +69,7 @@ package {
 			
 			// set the default rendering styles 
 			this.stateLayer.outline = 0xaaaaaa;
-			this.stateLayer.fill = null;
+			//this.stateLayer.fill = null;
 			this.stateLayer.selectable = false;
 			
 			// add the state layer second to put the outlines on top 

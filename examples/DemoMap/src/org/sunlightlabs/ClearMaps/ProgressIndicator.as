@@ -9,7 +9,7 @@ package org.sunlightlabs.ClearMaps
 		private var numBoxes:int = 19;
 		private var boxSize:int = 4;
 		
-		private var maxTitleWidth = 50;
+		private var maxTitleWidth:int = 50;
 		
 		private var title:String;
 		
@@ -44,7 +44,7 @@ package org.sunlightlabs.ClearMaps
 			
 			this.graphics.clear();
 
-			for(var i = 1; i <= boxes; i++)
+			for(var i:int = 1; i <= boxes; i++)
 			{
 				this.graphics.beginFill(0x0000cc, 0.5);
 				this.graphics.drawRect(maxTitleWidth + (i * (this.boxSize + 1)), Math.round(titleTextField.textHeight / 2), this.boxSize, this.boxSize);
@@ -63,7 +63,7 @@ package org.sunlightlabs.ClearMaps
 		{
 			this.graphics.clear();
 
-			var failureTextField = new TextField();
+			var failureTextField:TextField = new TextField();
 			failureTextField.embedFonts = true;
 			failureTextField.text = "Failed";
 			

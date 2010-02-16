@@ -17,12 +17,12 @@ package org.sunlightlabs.ClearMaps
 		
 		public var data:Object;
 		
-		public var fill:uint;
-		public var fillSelected:uint;
+		public var fill:Number;
+		public var fillSelected:Number;
 		
-		public var outline:uint;
-		public var outlineSelected:uint;
-		public var outlineThicknes:int;
+		public var outline:Number;
+		public var outlineSelected:Number;
+		public var outlineThicknes:Number;
 		
 		public var selectable:Boolean;
 		public var tooltip:Boolean;
@@ -40,7 +40,7 @@ package org.sunlightlabs.ClearMaps
 			this.addEventListener(Event.ADDED_TO_STAGE, addedToStage);
 		}
 		
-		public function addedToStage(even:Event)
+		public function addedToStage(even:Event):void
 		{
 			this.loadData(url);
 		}
@@ -67,7 +67,7 @@ package org.sunlightlabs.ClearMaps
 				this.addChild(this.selectedFeature);
 				
 				// call the hover callbakc, if set
-				if(this.hover)
+				if(this.hover != null)
 					this.hover(this.selectedFeature)
 			}
 		}
