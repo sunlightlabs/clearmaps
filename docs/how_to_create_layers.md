@@ -16,13 +16,13 @@ Step five uses the ClearMapsBuilder application included in this project. This a
 
 
 
-##Step 1: 
+###Step 1: 
 
 After unpacking, the county data Shapefile (co99_d00.shp) weighs in at 13MB and has an additional 700KB of attribute data in the DBF. This is far too big for web delivery. The steps ahead show how to convert the raw data into something small enough to allow for reasonable download times and quick rendering.
 
 
 
-##Step 2:
+###Step 2:
 
 Open the Shapefile in a GIS editor. In this example I use the open source editor Quantum GIS (version 1.3), though any editor capable of exporting selected features and re-projection should work fine. 
 
@@ -32,7 +32,7 @@ Quantum GIS allows for automatic re-projection of exported Shapefiles. I selecte
 
 
 
-##Step 3: 
+###Step 3: 
 
 Even with the unneeded states and territories remove the Shapefile remains almost the same size as the original. To start the process of cutting the file size down a line simplification step is required. This removes detail that is not unnecessary for display at lower resolution. If you are fortunate enough to have access to ArcGIS, the Data Management Toolbox provides several simplification tools that are quite effective. 
 
@@ -44,7 +44,7 @@ Export the simplified data as a new polygon Shapefile. Be sure to download both 
 
 
 
-##Step 4: 
+###Step 4: 
 
 As MapShaper reduces detail some map features, such as small islands, are lost completely. This means that the DBF file contains attribute data for features no longer in the Shapefile, causing problems in subsequent processing steps. To overcome this I open the simplified Shapefile in the GIS editor, select all the visible features and re-export. This removes any lost features from Shapefile and generates a new matching DBF file.
 
@@ -52,7 +52,7 @@ Before proceeding, repeat steps one through four using the state boundary file (
 
 
 
-##Step 5: 
+###Step 5: 
 
 Now that the Shapefiles are re-projected, simplified and cleaned they are ready to be converted into a compressed binary format ready for use by the ActionScript renderer. This compressed format combines Shapefile vector data with the desired feature attributes, further reducing size and improving rendering speed. 
 
@@ -62,6 +62,6 @@ Finally, click "Export Map Layers." The export dialog reports the original and e
 
 
 
-##Step 6:
+###Step 6:
 
 Move the map file to a location where it can be requested via HTTP by the ActionScript rendering client.  See the example on how to build a client using the rendering library.
