@@ -83,6 +83,19 @@ package {
 			
 			// finally add the map to the application, attaching to stage triggers data loading 
 			this.addChild(map);
+			
+			
+			// add source description text
+			this.sourceTextField = new TextField();
+			this.sourceTextField.embedFonts = true;
+			this.sourceTextField.text = "Source: U.S. Census Bureau Small Area Income & Poverty Estimates for 2008.";
+			this.sourceTextField.autoSize = TextFieldAutoSize.RIGHT;
+			this.sourceTextField.setTextFormat(new TextFormat("mapFont", 10, 0x000000, false));
+		
+			this.sourceTextField.x = this.stage.stageWidth - this.sourceTextField.width;
+			this.sourceTextField.y = this.stage.stageHeight - this.sourceTextField.height;
+			
+			this.addChild(this.sourceTextField);
 		}
 		
 		
@@ -91,7 +104,7 @@ package {
 			// process data once the map is ready!
 			
 			// create dictionary of county data containing state and county FIPS codes 
-			// the FIPS codes are also in the data attributes for the counties map layer
+			// the FIPS codes match the feature attributes for the counties map layer
 			
 			for each(var d:Object in rawData.data)
 			{
@@ -117,7 +130,7 @@ package {
 				}
 			}
 			
-			// iterate the features and match the
+			// iterate the features and match the data to the features
 			for each(var f:Feature in this.countyLayer.features)
 			{
 				// set rendering paramaters for each feature based on the data
@@ -139,24 +152,6 @@ package {
 			
 			// re-draw the layer with the the data
 			this.countyLayer.draw();
-			
-			
-			
-			// add a source label to the map
-			if(!this.sourceTextField)
-			{
-				this.sourceTextField = new TextField();
-				this.sourceTextField.embedFonts = true;
-				this.sourceTextField.text = "Source: U.S. Census Bureau Small Area Income & Poverty Estimates for 2008.";
-				this.sourceTextField.autoSize = TextFieldAutoSize.RIGHT;
-				this.sourceTextField.setTextFormat(new TextFormat("mapFont", 10, 0x000000, false));
-			
-				this.sourceTextField.x = this.stage.width - this.sourceTextField.width;
-				this.sourceTextField.y = this.stage.height + 25; // - this.sourceTextField.height;
-				
-				
-				this.addChild(this.sourceTextField);
-			}
 		}
 		
 		public function countyHover(f:Feature):void
