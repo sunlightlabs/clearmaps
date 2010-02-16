@@ -36,7 +36,7 @@ package {
 			super();
 			
 			// give the map a title 
-			this.map = new Map("Percentage of Population Below Poverty");
+			this.map = new Map("Percentage of Population in Poverty");
 			
 			// listen for map ready event to process/visualize data
 			this.map.addEventListener(MapEvent.READY, mapReady);
@@ -69,7 +69,6 @@ package {
 			
 			// set the default rendering styles 
 			this.stateLayer.outline = 0xaaaaaa;
-			//this.stateLayer.fill = null;
 			this.stateLayer.selectable = false;
 			
 			// add the state layer second to put the outlines on top 
