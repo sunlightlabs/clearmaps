@@ -134,6 +134,7 @@ package {
 			for each(var f:Feature in this.countyLayer.features)
 			{
 				// set rendering paramaters for each feature based on the data
+				// these per-feature styles override the layer defaults
 				if(this.countyPoveryData[f.data.state] && this.countyPoveryData[f.data.state][f.data.county])
 				{
 					// percent poverty is encoded as the alpha
@@ -160,14 +161,3 @@ package {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
