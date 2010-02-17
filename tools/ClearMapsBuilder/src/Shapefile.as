@@ -1,4 +1,4 @@
-package
+package org.sunlightlabs.ClearMaps
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
@@ -228,10 +228,14 @@ package
 	        				for each(var ring:Array in shape.rings)
 		        			{
 		        				var element:Array = new Array;
+		        				var previousPoint:ShpPoint;
 		        				
 		        				for each(var p:ShpPoint in ring)
 		        				{
-		        					element.push(translatePoint(p));
+		        					if(previousPoint != p)
+		        						element.push(translatePoint(p));
+		        					
+		        					previousPoint = p;
 		        				}
 		        				
 		        				data.elements.push(element);
