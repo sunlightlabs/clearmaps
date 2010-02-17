@@ -228,14 +228,15 @@ package org.sunlightlabs.ClearMaps
 	        				for each(var ring:Array in shape.rings)
 		        			{
 		        				var element:Array = new Array;
-		        				var previousPoint:ShpPoint;
+		        				var previousPoint:Object;
 		        				
 		        				for each(var p:ShpPoint in ring)
 		        				{
-		        					if(previousPoint != p)
-		        						element.push(translatePoint(p));
+		        					var currentPoint:Object = translatePoint(p)
+		        					if(previousPoint && (previousPoint.x != currentPoint.x || previousPoint.y != currentPoint.y))
+		        						element.push(currentPoint);
 		        					
-		        					previousPoint = p;
+		        					previousPoint = currentPoint;
 		        				}
 		        				
 		        				data.elements.push(element);
