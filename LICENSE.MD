@@ -1,3 +1,13 @@
+Exceptions:
+ 
+1) The ClearMaps Builder utility makes use of Edwin Vanrijkom's Shapefile importer. All files in /tools/ClearMapsBuilder/src/org/vanrijkom/ are his. The full source and any available license is at: http://code.google.com/p/vanrijkom-flashlibs/
+
+2) The DemoMap project includes the freeware "Sans Between" font by Manfred Klein. The font file at /examples/DemoMap/src/assessts/sans_between.ttf is his. For more information visit: http://www.fontspace.com/manfred-klein/sans-between
+
+
+
+=========
+
 Copyright (c) 2010, Sunlight Foundation
 All rights reserved.
  
